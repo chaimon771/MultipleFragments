@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hackeru.fragmentshw.fragmentshomework.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85"
+        tools:layout_editor_absoluteY="435dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnColor"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:onClick="color"
+        android:text="Color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame1"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintRight_toLeftOf="@+id/btnText"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Text"
+        android:onClick="text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame1"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/btnColor" />
+
+    <FrameLayout
+
+        android:id="@+id/frame1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#cacac8"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
